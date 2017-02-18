@@ -1,0 +1,12 @@
+#
+# OSGI APPLICATION DEBUG RUN SPECIFICATION
+#
+
+-include: ~net.mypieceofthe.osgi.bndrun
+
+-runrequires.debug:  ${debug-bundles}
+
+-runtrace: true
+
+-runbundles: \
+	${error;Resolve first}
