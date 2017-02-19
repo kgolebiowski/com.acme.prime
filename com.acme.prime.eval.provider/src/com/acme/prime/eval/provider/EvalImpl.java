@@ -20,7 +20,7 @@ import osgi.enroute.debug.api.Debug;
 		}
 )
 public class EvalImpl implements Eval {
-	Pattern EXPR = Pattern.compile( "\\s*(?<left>\\d+)\\s*(?<op>\\+|-)\\s*(?<right>\\d+)\\s*");
+	Pattern EXPR = Pattern.compile( "\\s*(?<left>\\d+)\\s*(?<op>\\+|-|\\*|/)\\s*(?<right>\\d+)\\s*");
 	
 	@Override
 	public double eval(String expression) throws Exception {
@@ -30,9 +30,15 @@ public class EvalImpl implements Eval {
 		
 		double left = Double.valueOf( m.group("left"));
 		double right = Double.valueOf( m.group("right"));
-		switch( m.group("op")) {
-		case "+": return left + right;
-		case "-": return left - right;
+		switch (m.group("op")) {
+			case "+":
+				return left + right;
+			case "-":
+				return left - right;
+			case "*":
+				return left * right;
+			case "/":
+				return left / right;
 		}
 		return Double.NaN;
 	}
