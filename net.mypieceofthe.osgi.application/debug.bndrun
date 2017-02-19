@@ -39,4 +39,5 @@
 	osgi.enroute.rest.simple.provider;version='[2.0.0,2.0.1)',\
 	osgi.enroute.twitter.bootstrap.webresource;version='[3.3.5,3.3.6)',\
 	osgi.enroute.web.simple.provider;version='[2.0.0,2.0.1)',\
-	osgi.enroute.webconsole.xray.provider;version='[2.0.0,2.0.1)'
+	osgi.enroute.webconsole.xray.provider;version='[2.0.0,2.0.1)',\
+	net.mypieceofthe.osgi.prime.upper.provider;version=snapshot
