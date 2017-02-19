@@ -7,10 +7,18 @@ import org.osgi.service.component.annotations.Component;
 
 import com.acme.prime.eval.api.Eval;
 
+import osgi.enroute.debug.api.Debug;
+
 /**
  * 
  */
-@Component(name = "com.acme.prime.eval")
+@Component(
+		name = "com.acme.prime.eval",
+		property = {
+				Debug.COMMAND_SCOPE + "=test",
+				Debug.COMMAND_FUNCTION + "=eval"
+		}
+)
 public class EvalImpl implements Eval {
 	Pattern EXPR = Pattern.compile( "\\s*(?<left>\\d+)\\s*(?<op>\\+|-)\\s*(?<right>\\d+)\\s*");
 	
