@@ -12,8 +12,7 @@ public class UpperImpl implements Upper {
 
 	@Override
 	public String upper(String input) {
-		// TODO Auto-generated method stub
-		return null;
+		return input.toUpperCase();
 	}
 
 }
