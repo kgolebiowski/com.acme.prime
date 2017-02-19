@@ -23,7 +23,8 @@ JPM-Command:			eval
 	web=web
 
 -buildpath: \
-	osgi.enroute.base.api
+	osgi.enroute.base.api,\
+	com.acme.prime.eval.api;version=latest
 	
 -testpath: \
 	osgi.enroute.junit.wrapper;version=4.12
