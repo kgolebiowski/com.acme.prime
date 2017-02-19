@@ -13,7 +13,7 @@ import osgi.enroute.webserver.capabilities.RequireWebServerExtender;
 @RequireWebServerExtender
 @RequireConfigurerExtender
 @Component(name="net.mypieceofthe.osgi")
-public class OsgiApplication implements REST {
+public class UpperApplication implements REST {
 
 	public String getUpper(String string) {
 		return string.toUpperCase();
