@@ -23,7 +23,8 @@ JPM-Command:			osgi
 	web=web
 
 -buildpath: \
-	osgi.enroute.base.api
+	osgi.enroute.base.api,\
+	net.mypieceofthe.osgi.api;version=latest
 	
 -testpath: \
 	osgi.enroute.junit.wrapper;version=4.12
