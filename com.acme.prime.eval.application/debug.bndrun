@@ -1,0 +1,12 @@
+#
+# EVAL APPLICATION DEBUG RUN SPECIFICATION
+#
+
+-include: ~com.acme.prime.eval.bndrun
+
+-runrequires.debug:  ${debug-bundles}
+
+-runtrace: true
+
+-runbundles: \
+	${error;Resolve first}
