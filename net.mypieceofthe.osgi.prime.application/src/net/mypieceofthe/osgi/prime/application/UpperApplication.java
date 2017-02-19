@@ -1,9 +1,9 @@
-package net.mypieceofthe.osgi.application;
+package net.mypieceofthe.osgi.prime.application;
 
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
-import net.mypieceofthe.osgi.upper.api.Upper;
+//import net.mypieceofthe.osgi.prime.upper.api.Upper;
 import osgi.enroute.configurer.api.RequireConfigurerExtender;
 import osgi.enroute.google.angular.capabilities.RequireAngularWebResource;
 import osgi.enroute.rest.api.REST;
@@ -17,11 +17,12 @@ import osgi.enroute.webserver.capabilities.RequireWebServerExtender;
 @Component(name="net.mypieceofthe.osgi")
 public class UpperApplication implements REST {
 	
-	@Reference
-	Upper upper;
+//	@Reference
+//	Upper upper;
 
 	public String getUpper(String string) {
-		return upper.upper(string);
+		return null;
+//		return upper.upper(string);
 	}
 
 }

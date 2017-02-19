@@ -1,4 +1,4 @@
-package net.mypieceofthe.osgi.upper.api;
+package net.mypieceofthe.osgi.prime.upper.api;
 
 /**
  * 

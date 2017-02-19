@@ -10,7 +10,7 @@ Bundle-Description: 				\
 	${warning;Please update this Bundle-Description in net.mypieceofthe.osgi.api/bnd.bnd}
 
 	
-Export-Package: net.mypieceofthe.osgi.upper.api;provide:=true
+Export-Package: net.mypieceofthe.osgi.prime.upper.api;provide:=true
 
 
 Require-Capability: \

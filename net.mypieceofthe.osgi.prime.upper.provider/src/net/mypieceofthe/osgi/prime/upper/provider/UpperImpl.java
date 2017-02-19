@@ -2,7 +2,7 @@ package net.mypieceofthe.osgi.prime.upper.provider;
 
 import org.osgi.service.component.annotations.Component;
 
-import net.mypieceofthe.osgi.upper.api.Upper;
+import net.mypieceofthe.osgi.prime.upper.api.Upper;
 
 /**
  * 
